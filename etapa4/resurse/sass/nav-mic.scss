@@ -1,0 +1,59 @@
+@mixin mixin1{
+    transition: none;
+    display: none;
+}
+#hamburger {
+    display: block;
+    height: 50px;
+    img{
+        position: relative;
+        height: 100%;
+        width: auto;
+    }
+}
+ul.meniu {
+    display: none;
+    > li:hover ul{
+        animation: none;
+    }
+    li {
+        width: 100% !important;
+    }
+    ul{
+        width: 100%;
+    }
+}
+#ch-menu:checked~nav > ul.meniu {
+    display: block;
+    z-index: 5;
+    position: relative;
+    ul {
+        li {
+            z-index: 10;
+            position: relative;
+        }
+    }
+}
+ul.meniu ul li>a:hover{
+    &::after{
+        @include mixin1;
+    }
+    &::before{
+        @include mixin1;
+    }
+}
+nav>ul.meniu{
+    animation-name: animatie_meniu;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0 0;
+}
+@keyframes animatie_meniu {
+    0%{
+        transform: scale(0, 1);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}

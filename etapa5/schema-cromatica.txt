@@ -1,0 +1,10 @@
+Schema cromatica aleasa pentru acest proiect are 2 culori de baza/principale: auriu (#ac773c) si roz pal (#eecfc5), restul culorilor fiind derivate din acestea. 
+Astfel, in ceea ce priveste psihologia culorilor, rozul este considerat o culoare a feminitatii.
+Culorile alese sunt urmatoarele:
+--roz: #eecfc5;
+--roz-deschis: #fff1ec;
+--roz-highlight-inchis: #e5b1a0;
+--roz-highlight-deschis: #feddd0;
+--auriu: #ac773c;
+--maro-text: #221a16;
+

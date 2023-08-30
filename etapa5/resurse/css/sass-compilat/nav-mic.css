@@ -1,0 +1,58 @@
+#hamburger {
+    display: block;
+    height: 50px;
+  }
+  #hamburger img {
+    position: relative;
+    height: 100%;
+    width: auto;
+  }
+  
+  ul.meniu {
+    display: none;
+  }
+  ul.meniu > li:hover ul {
+    animation: none;
+  }
+  ul.meniu li {
+    width: 100% !important;
+  }
+  ul.meniu ul {
+    width: 100%;
+  }
+  
+  #ch-menu:checked ~ nav > ul.meniu {
+    display: block;
+    z-index: 5;
+    position: relative;
+  }
+  #ch-menu:checked ~ nav > ul.meniu ul li {
+    z-index: 10;
+    position: relative;
+  }
+  
+  ul.meniu ul li > a:hover::after {
+    transition: none;
+    display: none;
+  }
+  ul.meniu ul li > a:hover::before {
+    transition: none;
+    display: none;
+  }
+  
+  nav > ul.meniu {
+    animation-name: animatie_meniu;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0 0;
+  }
+  
+  @keyframes animatie_meniu {
+    0% {
+      transform: scale(0, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

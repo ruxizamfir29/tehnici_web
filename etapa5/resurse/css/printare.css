@@ -1,0 +1,147 @@
+@page :left {
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+}
+  
+@page :right {
+    margin-right: 2.5cm;
+    margin-left: 0.5cm;
+}
+
+body {
+    overflow: visible; 
+}
+
+header {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+
+    margin-left:var(--margin-main);
+    margin-right:var(--margin-main);
+}
+
+/* meniu */
+nav, #bara-meniu{
+    display: none;
+}
+
+/* titlu site */
+header #print-titlu {
+    display: block;
+    position: absolute;
+    font-size: 2.5rem;
+    text-decoration: underline;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: calc(50% + 2.5rem);
+
+    color: black !important;
+    page-break-after: always;
+}
+
+/* banner site */
+header #print-banner{
+    border: 4px dotted black;
+    width: 70%;
+    display: block;
+    color: black !important;
+    position: absolute;
+    top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+/* watermark site */
+header #print-watermark {
+    width: 100px;
+    height: 2cm;
+    border: 5px double black;
+    border-radius: 6px;
+    opacity: 0.65;
+    position: fixed;
+    color: black !important;
+    font-weight: bold;
+    text-align: center;
+    bottom: 2px;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-pagina {
+    display: block;
+}
+
+footer {
+    page-break-before: always;
+}
+
+h1, h2 {
+    color: black !important;
+    font-weight: normal !important;
+}
+
+.heading i{
+    color: black !important;
+}
+
+#tabel h2{
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    font-weight: normal !important;
+    color: black !important;
+}
+
+b{
+    font-weight: normal;
+}
+
+em{
+    font-style: normal;
+}
+
+i{
+    font-style: normal;
+}
+
+strong{
+    font-weight: normal;
+}
+
+.image {
+    display: none;
+}
+
+#stilizare-ifr, #link-top, picture, .descriere-produs {
+    display: none;
+}
+
+#b-radius{
+    border-radius: 0px !important;
+}
+
+table tr>td, table th, table caption, tfoot tr{
+    background-color: transparent !important;
+    color: black !important;
+}
+
+table, table th, table td{
+    border-color: black !important;
+}
+
+footer{
+    background-color: transparent !important;
+    color: black !important;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "silky_grow",
+  "version": "1.0.0",
+  "description": "Site-ul unui magazin de skincare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calitate",
+    "superioara",
+    "natural",
+    "produse",
+    "scent-free",
+    "skincare",
+    "marca",
+    "proprie",
+    "Silky",
+    "Glow"
+  ],
+  "author": "Zamfir Miruna Ruxandra",
+  "license": "ISC",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sass": "^1.64.2",
+    "sharp": "^0.32.0"
+  }
+}

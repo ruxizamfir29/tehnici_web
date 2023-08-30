@@ -1,0 +1,210 @@
+#grid-pagina{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"z-general z-general z-general z-general"
+                        "z-general z-general z-general z-general"
+                        "z-zona-mea z-zona-mea z-zona-mea z-zona-mea"
+                        "z-zona-mea z-zona-mea z-zona-mea z-zona-mea"
+                        "z-calendar z-tabel z-tabel z-anunturi"
+                        "z-lista z-util-stat z-site-server z-site-server"
+}
+#grid-pagina > *{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#general{
+    grid-area:z-general;
+}
+#calendar{
+    grid-area:z-calendar;
+}
+#tabel{
+    grid-area:z-tabel;
+}
+#anunturi{
+    grid-area:z-anunturi;
+}
+#lista-utilizatori{
+    grid-area:z-lista;
+}
+#utilizator-statistici{
+    grid-area:z-util-stat;
+}
+#site-server{
+    grid-area:z-site-server;
+}
+#zona-mea{
+    grid-area:z-zona-mea;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+#tabel table th:nth-child(odd), #tabel table tr>td:nth-child(odd){
+    background-color: var(--roz-deschis);
+}
+#tabel table th:nth-child(even), #tabel table tr>td:nth-child(even){
+    background-color: var(--roz);
+}
+#tabel table tr>td{
+    transition: background-color 1.2s linear;
+}
+#tabel table tr:hover>td{
+    background-color: var(--roz-highlight-deschis);
+}
+#tabel table tr>td:hover{
+    background-color: var(--roz-highlight-inchis);
+}
+#tabel table, #tabel th, #tabel td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+#tabel #b-radius{
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+#tabel table caption{
+    caption-side: bottom;
+    background-color: var(--roz);
+    padding: 5px;
+}
+#tabel table tfoot tr{
+    background-color: var(--roz-deschis);
+}
+#tabel table td, #tabel table th{
+    text-align: center;
+    padding: 5px;
+}
+#tabel table tfoot tr td a{
+    color: var(--maro-text);
+    transition: color 1s linear;
+}
+
+#tabel table tfoot tr td a:hover{
+    color: var(--auriu);
+}
+
+#link-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--auriu);
+    transform: rotate(45deg);
+    opacity: 0.5;
+    transition: opacity 0.7s linear;
+}
+
+#link-top:hover{
+    opacity: 1;
+}
+
+#sageata{
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid var(--auriu);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transform: rotate(-45deg) translateY(10px);
+    display: inline-block;
+}
+
+#stilizare-ifr{
+    width: max-content;
+}
+#stilizare-ifr iframe{
+    border: 2px solid var(--roz-highlight-inchis);
+}
+
+#stilizare-link-ifr{
+    text-align: center;
+    
+}
+
+#stilizare-link-ifr a{
+    display: block;
+
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px 3px var(--roz-highlight-inchis) inset;
+    padding: 5px;
+    
+    background-color: var(--roz-deschis);
+    text-decoration: none;
+    color: var(--maro-text);
+    font-weight: bold;
+    transition: background-color 0.7s linear;
+}
+
+#stilizare-link-ifr a:hover{
+    background-color: white;
+}
+
+.tab1, .tab2{
+    border-top: 3px solid var(--roz-highlight-inchis);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 110px;
+}
+.cont-tab1, .cont-tab2{
+    position: relative;
+    top: -7px;
+}
+#stilizare-link-ifr{
+    display: flex;
+    justify-content: right;
+}
+
+.image{
+    background-image: url(../../imagini/poza-coperta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    background-size: cover;
+}
+
+footer{
+    background-color: var(--roz-deschis);
+    padding: 1%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+a{
+    color: var(--maro-text);
+    transition: color 0.7s linear;
+}
+
+a:hover{
+    color: var(--auriu);
+}
+
+#favorite>div {
+    display: inline-block;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    color: var(--maro-text);
+    background-color: var(--roz-deschis);
+    box-shadow: 5px 5px 8px var(--roz);
+}
+#favorite>div>div {
+    width: 400px;
+    height: 150px;
+}
+#favorite>div>div p, #favorite>div>div h3 {
+    padding: 0 2%;
+}

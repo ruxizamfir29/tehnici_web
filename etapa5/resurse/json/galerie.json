@@ -1,0 +1,96 @@
+{
+	"cale_galerie":"/resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"galerie1.png",
+			"titlu": "Crema de corp",
+			"descriere":" Crema de corp",
+			"luni": ["ianuarie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie2.png",
+			"titlu": "Jade roller - roz",
+			"descriere":" Jade roller - roz",
+			"luni": ["ianuarie", "februarie", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie3.png",
+			"titlu": "Sapun cu efect hidratant",
+			"descriere":" Sapun cu efect hidratant",
+			"luni": ["ianuarie", "februarie", "martie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie4.png",
+			"titlu": "Masca cu argila",
+			"descriere":" Masca cu argila",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie5.png",
+			"titlu": "Crema hidratanta pentru fata",
+			"descriere":" Crema hidratanta pentru fata",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie6.png",
+			"titlu": "Jade roller - verde",
+			"descriere":" Jade roller - verde",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "octombrie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie7.png",
+			"titlu": "Crema hidratanta pentru maini",
+			"descriere":" Crema hidratanta pentru maini",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "noiembrie", "decembrie"]
+		},
+		{
+			"fisier":"galerie8.png",
+			"titlu": "Serum impotriva acneei",
+			"descriere":" Serum impotriva acneei",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "decembrie"]
+		},
+		{
+			"fisier":"galerie9.png",
+			"titlu": "Serum hidratant",
+			"descriere":" Serum hidratant",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+		},
+		{
+			"fisier":"galerie10.png",
+			"titlu": "Masca cu carbune",
+			"descriere":" Masca cu carbune",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie"]
+		},
+		{
+			"fisier":"galerie11.png",
+			"titlu": "Masca cu foita de aur",
+			"descriere":" Masca cu foita de aur",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie"]
+		},
+		{
+			"fisier":"galerie12.png",
+			"titlu": "Masca hidratanta",
+			"descriere":" Masca hidratanta",
+			"luni": ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+        {
+			"fisier":"galerie13.png",
+			"titlu": "Masca impotriva cearcanelor",
+			"descriere":" Masca impotriva cearcanelor",
+			"luni": ["februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+        {
+			"fisier":"galerie14.png",
+			"titlu": "Perie exfolianta pentru corp",
+			"descriere":" Perie exfolianta pentru corp",
+			"luni": ["martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		},
+        {
+			"fisier":"galerie15.png",
+			"titlu": "Scrub pentru fata",
+			"descriere":" Scrub pentru fata",
+            "autor":"Autor: Nati Melnychuk pe Unsplash",
+			"luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
+		}
+	]
+}

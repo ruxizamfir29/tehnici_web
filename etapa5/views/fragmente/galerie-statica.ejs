@@ -1,0 +1,33 @@
+<h2>Galerie</h2>
+<div id="grid-galerie">
+<%
+    var counter = 0;
+    var d=new Date();
+    var luna_curenta = d.getMonth();
+    var luni = ["ianuarie", "februarie", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
+    for (let image of locals.imagini) {
+        if(image.luni.includes(luni[luna_curenta])) {
+            counter++;
+%>
+    <div class="element-galerie">
+        <figure>
+            <picture>
+                <source srcset="<%- image.fisier_mic %>" media="(max-width: 700px)">
+                <source srcset="<%- image.fisier_mediu %>" media="(min-width: 700px) and (max-width: 1000px)">
+                <img src="<%- image.fisier_mare %>" title="<%- image.descriere %>" alt="<%- image.titlu %>">
+            </picture>
+            <figcaption>
+                <%- image.descriere %>
+                <% if (image.autor) { %>
+                <em><%- image.autor %></em>
+                <% } %>
+            </figcaption>
+        </figure>
+    </div>
+<%          if(counter == 12) {
+                break;
+            }
+        }
+    }
+%>
+</div>

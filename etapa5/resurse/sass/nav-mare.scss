@@ -1,0 +1,148 @@
+header{
+  position: relative;
+  z-index: 99;
+}
+
+@mixin mixin1{
+  height: 48px;
+  width: 175px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 48px;
+}
+
+@mixin mixin2{
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+@mixin mixin3{
+  color: var(--maro-text);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--roz-deschis);
+}
+
+@mixin mixin4{
+  font-size: 1.25rem;
+}
+
+ul.meniu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  >li{
+      @include mixin1;
+      a:hover span{
+          @include mixin4;
+      }
+      div:hover span{
+          @include mixin4;
+      }
+      &:hover ul{
+          animation-name: animatie_submeniu;
+          animation-duration: 500ms;
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          transform-origin: 50% 0;
+          display: block;
+      }
+  }
+  li{
+      &:hover{
+          overflow: visible;
+      }
+      a{
+          display: block;
+          height: 100%;
+      }
+  }
+  ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      z-index: 5;
+      position: relative;
+      display: none;
+      >li{
+          @include mixin1;
+      }
+      li{
+          a{
+              &:hover::after{
+                  transform: scale(1, 1);
+              }
+              &:hover::before{
+                  transform: scale(1, 1);
+              }
+              &::after{
+                  content: "";
+                  transform-origin: 50% 0%;
+                  transform: scale(1, 0);
+                  transition: transform 0.7s linear;
+                  position: absolute;
+                  left: 0;
+                  background: linear-gradient(to right, var(--auriu) 10%, var(--roz-deschis));
+                  width: 10px;
+                  height: 50px;
+                  /* evitare bug */
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+              }
+              &::before{
+                  content: "";
+                  transform-origin: 50% 0%;
+                  transform: scale(1, 0);
+                  transition: transform 0.7s linear;
+                  position: absolute;
+                  right: 0;
+                  background: linear-gradient(to left, var(--auriu) 10%, var(--roz-deschis));
+                  width: 10px;
+                  height: 50px;
+                  /* evitare bug */
+                  backface-visibility: hidden;
+                  -webkit-backface-visibility: hidden;
+              }
+          }
+      }
+  }
+  a {
+      @include mixin3;
+      span{
+          @include mixin2;
+      }
+  }
+  div {
+      @include mixin3;
+      span{
+          @include mixin2;
+      }
+  }
+  
+}
+@keyframes animatie_submeniu {
+  0%{
+      transform: scale(1, 0);
+  }
+  100%{
+      transform: scale(1, 1);
+  }
+}
+nav {
+  height: 50px;
+  top: 0;
+}
+#hamburger, #ch-menu {
+  display: none;
+}
+#bara-meniu {
+  background-color: var(--roz-deschis);
+  height: 50px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}

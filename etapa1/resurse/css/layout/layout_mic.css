@@ -1,0 +1,16 @@
+#grid-pagina{
+    display: block;
+}
+#grid-pagina > *{
+    margin: 0;
+    padding: 7%;
+}
+body{
+    font-size: 12px;
+}
+#tabel table{
+    overflow-x: scroll;
+}
+th, td { 
+    min-width: 50px;
+}

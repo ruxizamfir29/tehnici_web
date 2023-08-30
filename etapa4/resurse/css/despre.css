@@ -1,0 +1,16 @@
+main > *{
+    margin-right: var(--spatiere-mare);
+    margin-left: var(--spatiere-mare);
+}
+@media screen and (max-width: 700px){
+    main > *{
+        margin-right: var(--spatiere-mica);
+        margin-left: var(--spatiere-mica);
+    }
+}
+@media screen and (max-width: 1000px){
+    main > *{
+        margin-right: var(--spatiere-medie);
+        margin-left: var(--spatiere-medie);
+    }
+}

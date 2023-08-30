@@ -1,0 +1,9 @@
+body {
+    --roz: #eecfc5;
+    --roz-deschis: #fff1ec;
+    --roz-highlight-inchis: #e5b1a0;
+    --roz-highlight-deschis: #feddd0;
+    --auriu: #ac773c;
+    --maro-text: #221a16;
+    color: var(--maro-text);
+}

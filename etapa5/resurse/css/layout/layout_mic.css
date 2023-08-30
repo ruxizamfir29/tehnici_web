@@ -1,0 +1,19 @@
+#grid-pagina{
+    display: block;
+}
+#grid-pagina > *{
+    margin-left: var(--spatiere-mica);
+    margin-right: var(--spatiere-mica);
+    padding: 3px;
+}
+body{
+    font-size: 12px;
+}
+#favorite>div>div {
+    width: 200px;
+    height: 150px;
+}
+
+iframe, video{
+    width: 75vw !important;
+}
