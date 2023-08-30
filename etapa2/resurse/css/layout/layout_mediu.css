@@ -1,0 +1,53 @@
+#grid-pagina{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"z-general z-general"
+                        "z-general z-general"
+                        "z-general z-general"
+                        "z-general z-general"
+                        "z-zona-mea z-zona-mea"
+                        "z-zona-mea z-zona-mea"
+                        "z-zona-mea z-zona-mea"
+                        "z-zona-mea z-zona-mea"
+                        "z-calendar z-tabel"
+                        "z-anunturi z-tabel"
+                        "z-lista z-util-stat"
+                        "z-site-server z-site-server"
+}
+#grid-pagina > *{
+    margin: 0;
+    padding: 7%;
+}
+#general{
+    grid-area:z-general;
+}
+#calendar{
+    grid-area:z-calendar;
+}
+#tabel{
+    grid-area:z-tabel;
+}
+#anunturi{
+    grid-area:z-anunturi;
+}
+#lista-utilizatori{
+    grid-area:z-lista;
+}
+#utilizator-statistici{
+    grid-area:z-util-stat;
+}
+#site-server{
+    grid-area:z-site-server;
+}
+#zona-mea{
+    grid-area:z-zona-mea;
+}
+body{
+    font-size: 14px;
+}
+#tabel table{
+    overflow-x: scroll;
+}
+th, td { 
+    min-width: 50px; 
+}
